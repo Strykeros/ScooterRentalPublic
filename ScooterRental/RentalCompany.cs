@@ -42,6 +42,7 @@ namespace ScooterRental
             return decimal.Parse(totalIncomeStr);
         }
 
+        // starts the rental
         public void StartRent(string id)
         {
             var scooter = _scooterService.GetScooterById(id);
